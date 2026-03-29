@@ -1,16 +1,20 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "regions": ["pdx1"],
+  "trailingSlash": false,
   "functions": {
-    "api/**/*.js": {
+    "api/[...slug].js": {
       "maxDuration": 10
     }
   },
-  "rewrites": [
+  "routes": [
     {
-      "source": "/:path*",
-      "destination": "/index.html"
+      "src": "^/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "^/(?!api/)",
+      "dest": "/api/[...slug].js"
     }
   ]
 }
