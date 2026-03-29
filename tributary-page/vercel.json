@@ -3,5 +3,11 @@
   "outputDirectory": "dist",
   "env": {
     "VITE_APP_TITLE": "Lời Tạm Biệt"
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
