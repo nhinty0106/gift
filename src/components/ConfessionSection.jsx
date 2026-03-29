@@ -38,7 +38,7 @@ export default function ConfessionSection() {
             whileTap={{ scale: 0.95 }}
             className="relative focus:outline-none"
           >
-            <div className="w-56 h-auto">
+            <div className="w-64 xs:w-72 sm:w-80 h-auto transition-all duration-300">
               <svg viewBox="0 0 220 150" className="w-full h-auto drop-shadow-xl">
                 <defs>
                   <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
@@ -67,9 +67,9 @@ export default function ConfessionSection() {
                 transition={{ duration: 0.35 }}
                 className="w-full"
               >
-                {/* 5 confessions in alternating left-right layout */}
+                {/* 2 confessions in alternating left-right layout */}
                 <div style={{ maxWidth: '900px', marginLeft: 'auto', marginRight: 'auto', paddingLeft: '1rem', paddingRight: '1rem', paddingTop: '2rem', paddingBottom: '2rem' }}>
-                  {anniversaryMessages.slice(0, 5).map((msg, idx) => (
+                  {anniversaryMessages.slice(0, 2).map((msg, idx) => (
                     <motion.div
                       key={msg.id}
                       initial={{ opacity: 0, x: idx % 2 === 0 ? -40 : 40 }}
@@ -79,8 +79,11 @@ export default function ConfessionSection() {
                       style={{ display: 'flex', justifyContent: idx % 2 === 0 ? 'flex-start' : 'flex-end', marginBottom: '2rem' }}
                     >
                       <div className="w-full xs:max-w-md sm:max-w-xl md:w-2/3 bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl shadow-lg border border-blue-200" style={{ padding: '1.5rem' }}>
-                        <p className="text-sm xs:text-base sm:text-lg text-gray-800 leading-relaxed font-medium">
+                        <p className="text-sm xs:text-base sm:text-lg text-gray-800 leading-relaxed font-medium whitespace-pre-line">
                           {msg.message}
+                        </p>
+                        <p className="text-right text-sm sm:text-base font-bold text-blue-700 mt-4 italic">
+                          - {msg.name || "Ẩn danh"}
                         </p>
                       </div>
                     </motion.div>

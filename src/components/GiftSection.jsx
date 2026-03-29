@@ -28,19 +28,19 @@ export default function GiftSection() {
             whileTap={{ scale: 0.95 }}
             className="relative focus:outline-none group"
           >
-            <img 
-              src="https://png.pngtree.com/png-clipart/20200225/original/pngtree-yellow-gift-box-vector-illustration-with-flat-design-gift-box-clip-png-image_5280156.jpg" 
-              alt="Gift Box" 
+            <img
+              src="https://png.pngtree.com/png-clipart/20200225/original/pngtree-yellow-gift-box-vector-illustration-with-flat-design-gift-box-clip-png-image_5280156.jpg"
+              alt="Gift Box"
               className="w-96 h-96 drop-shadow-2xl object-cover rounded-lg"
             />
           </motion.button>
 
           <motion.p
-            animate={{ y: [0, 5, 0] }}
+            animate={{ y: [0, -5, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
             className="text-lg xs:text-xl font-semibold text-purple-600 text-center"
           >
-            ↓ Nhấn vào hộp quà để mở ↓
+            ↑ Nhấn vào hộp quà để mở ↑
           </motion.p>
         </div>
       </div>
@@ -93,10 +93,10 @@ export default function GiftSection() {
                     style={{ padding: '0.75rem 1.5rem' }}
                   >
                     <p className="text-center text-sm xs:text-base sm:text-lg text-gray-800 leading-relaxed font-medium mb-4">
-                      Cảm ơn bạn đã là một phần quan trọng trong những ngày tháng này. Bạn không chỉ là đồng nghiệp mà còn là người bạn quý báu mà tôi sẽ mãi ghi nhớ. 💝
+                      Em với Minh cũng có bàn với nhau một chút, tụi em muốn gửi lại chị một ít tiền nhà. Tụi em biết là hiện tại chị không còn ở đây nữa mà vẫn phải lo thêm chỗ ở tại Đà Nẵng, nên cũng muốn san sẻ với chị phần nào chi phí trong thời gian này.
                     </p>
-                    <p className="text-center text-xs xs:text-sm sm:text-base text-purple-700 font-semibold italic">
-                      Chúc bạn luôn hạnh phúc và thành công trong cuộc sống! ✨
+                    <p className="text-center text-sm xs:text-base sm:text-lg text-gray-800 leading-relaxed font-medium">
+                      Tuy số tiền không nhiều, nhưng đó là sự biết ơn và tấm lòng của tụi em dành cho chị trong khoảng thời gian đã qua. Chị đừng ngại hay từ chối nha, tụi em gửi bằng tất cả sự chân thành. Chỉ mong chị nhận để tụi em thấy vui hơn và cũng coi như là một chút hỗ trợ để chị đỡ áp lực phần nào trong lúc mọi thứ đang thay đổi như vậy. ✨
                     </p>
                   </motion.div>
 
@@ -108,7 +108,7 @@ export default function GiftSection() {
                     className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-3 px-6 transition-all duration-200 shadow-lg"
                     style={{ padding: '0.75rem 1.5rem' }}
                   >
-                    Đóng & Cảm Ơn 💕
+                    Đồng ý và Đồng ý💕
                   </motion.button>
                 </div>
 

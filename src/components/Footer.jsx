@@ -28,10 +28,10 @@ export default function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-2xl xs:text-3xl sm:text-4xl font-bold text-gray-800 mb-6"
+          className="text-2xl xs:text-3xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 tracking-wider mb-6"
           style={{ marginBottom: '2rem' }}
         >
-          Cm1-11
+          CM1-11
         </motion.h3>
 
         {/* Top Thank You Image */}
@@ -42,45 +42,28 @@ export default function Footer() {
           transition={{ duration: 0.8 }}
           style={{ marginBottom: '2rem', display: 'flex', justifyContent: 'center' }}
         >
-          <div style={{ position: 'relative', display: 'inline-block' }}>
-            <img 
-              src="https://res.cloudinary.com/dkzsva7pc/image/upload/v1774782467/dc5596482ab3bbcb1044defe2334d968_s798k1.jpg" 
-              alt="Lời cảm ơn" 
-              className="w-64 xs:w-72 sm:w-80 drop-shadow-2xl relative z-10"
-              style={{ 
-                borderRadius: '40%',
-                border: '10px solid white',
-                boxShadow: '0 20px 40px rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(0, 0, 0, 0.05)',
-                aspectRatio: '0.75'
+          <div
+            className="relative inline-block transition-transform duration-500 hover:scale-105"
+            style={{ filter: 'drop-shadow(0 20px 25px rgba(0,0,0,0.15))' }}
+          >
+            <div
+              style={{
+                backgroundColor: 'white',
+                padding: '12px',
+                clipPath: 'polygon(0 0, calc(100% - 60px) 0, 100% 60px, 100% 100%, 60px 100%, 0 calc(100% - 60px))'
               }}
-            />
-            {/* Oval frame border with gradient */}
-            <svg 
-              className="absolute pointer-events-none"
-              style={{ 
-                position: 'absolute',
-                top: '-12px',
-                left: '-12px',
-                width: 'calc(100% + 24px)',
-                height: 'calc(100% + 24px)',
-                filter: 'drop-shadow(0 10px 25px rgba(0, 0, 0, 0.15))',
-                zIndex: 5
-              }}
-              viewBox="0 0 320 360" 
-              preserveAspectRatio="xMidYMid meet"
+              className="relative z-10"
             >
-              <defs>
-                <linearGradient id="ovalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#e0e7ff" stopOpacity="1" />
-                  <stop offset="50%" stopColor="#f3f4f6" stopOpacity="1" />
-                  <stop offset="100%" stopColor="#e0e7ff" stopOpacity="1" />
-                </linearGradient>
-              </defs>
-              {/* Outer oval frame */}
-              <ellipse cx="160" cy="180" rx="110" ry="210" fill="none" stroke="url(#ovalGradient)" strokeWidth="8" />
-              {/* Inner accent line */}
-              <ellipse cx="160" cy="180" rx="104" ry="204" fill="none" stroke="#f3f4f6" strokeWidth="1" opacity="0.6" />
-            </svg>
+              <img
+                src="https://res.cloudinary.com/dkzsva7pc/image/upload/v1774782467/dc5596482ab3bbcb1044defe2334d968_s798k1.jpg"
+                alt="Lời cảm ơn"
+                className="w-64 xs:w-72 sm:w-80 object-cover block"
+                style={{
+                  aspectRatio: '0.75',
+                  clipPath: 'polygon(0 0, calc(100% - 50px) 0, 100% 50px, 100% 100%, 50px 100%, 0 calc(100% - 50px))'
+                }}
+              />
+            </div>
           </div>
         </motion.div>
 
@@ -111,20 +94,20 @@ export default function Footer() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.7, duration: 0.8 }}
-            className="text-gray-700 text-lg space-y-4 xs:space-y-5 sm:space-y-6"
+            className="text-gray-800 space-y-8 xs:space-y-10 sm:space-y-12"
             style={{ marginBottom: '3rem' }}
           >
             <motion.p
-              animate={{ color: ['#374151', '#0284c7', '#06b6d4', '#374151'] }}
+              animate={{ color: ['#1f2937', '#2563eb', '#1e40af', '#1f2937'] }}
               transition={{ duration: 4, repeat: Infinity }}
-              className="font-semibold text-shadow-lg"
+              className="font-extrabold text-shadow-md text-xl sm:text-2xl md:text-3xl mb-4"
             >
-              Những ngày tươi đẹp sẽ luôn nằm trong ký ức
+              Những ngày vừa là đồng nghiệp vừa là chị cùng phòng với tụi em thật sự rất vui và đáng nhớ.
             </motion.p>
             <motion.p
-              className="text-blue-600 font-bold text-xl animate-pulse-glow"
+              className="text-blue-700 font-black text-2xl sm:text-3xl md:text-4xl drop-shadow-md"
             >
-              Hẹn sẽ giữ liên lạc! 🌟
+              Chúc chị mọi thứ sắp tới thật thuận lợi và suôn sẻ 🤍 🌟
             </motion.p>
           </motion.div>
         </motion.div>
