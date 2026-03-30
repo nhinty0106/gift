@@ -104,12 +104,32 @@ export const memories = [
     id: 21,
     caption: "",
     photoUrl: "https://res.cloudinary.com/dkzsva7pc/image/upload/v1774669045/IMG_3530_osldpb.jpg"
-  }, 
-   {
+  },
+  {
     id: 22,
     caption: "",
-    photoUrl: "https://res.cloudinary.com/dkzsva7pc/image/upload/v1774669082/IMG_3533_zcgsu1.jpg"
-  }
+    photoUrl: "https://res.cloudinary.com/dkzsva7pc/image/upload/v1774880703/IMG_3602_xpbgrh.jpg"
+  },
+  {
+    id: 23,
+    caption: "",
+    photoUrl: "https://res.cloudinary.com/dkzsva7pc/image/upload/v1774880703/IMG_3601_lboq5d.jpg"
+  },
+  {
+    id: 24,
+    caption: "",
+    photoUrl: "https://res.cloudinary.com/dkzsva7pc/image/upload/v1774880702/IMG_3600_kjvj5p.jpg"
+  },
+  {
+    id: 25,
+    caption: "",
+    photoUrl: "https://res.cloudinary.com/dkzsva7pc/image/upload/v1774880704/IMG_3603_md3zrs.jpg"
+  },
+  {
+    id: 26,
+    caption: "",
+    photoUrl: "https://res.cloudinary.com/dkzsva7pc/image/upload/v1774880657/IMG_3599_xbrefh.jpg"
+  },
 ];
 
 export const siteConfig = {
